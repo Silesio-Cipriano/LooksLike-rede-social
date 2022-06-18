@@ -1,0 +1,197 @@
+@import "_colors";
+
+main {
+  color: white;
+  padding: 120px 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    input {
+      font-size: 20px;
+      color: white;
+      padding: 0 12px;
+    }
+
+    span {
+      display: flex;
+      flex-direction: column;
+      margin-top: 18px;
+
+      label {
+        margin-bottom: 8px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      input {
+        width: 408px;
+        height: 45px;
+        border-radius: 5px;
+        border: 1px solid $primary;
+        background-color: transparent;
+      }
+    }
+
+    .shortInput {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0 20px;
+
+      input {
+        width: 196px;
+
+      }
+    }
+
+    button {
+      margin-top: 32px;
+      background-color: $primary;
+
+      border: 1px solid $primary;
+      border-radius: 5px;
+      height: 45px;
+
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    p {
+      a {
+        font-weight: 700;
+        color: $primary;
+        transition: 0.3s ease;
+
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}
+
+.gradientHeroLeft {
+  position: absolute;
+  width: 758px;
+  height: 758px;
+  left: -365px;
+  top: 145px;
+  z-index: -1;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(68, 255, 187, 0.5) 0%, rgba(68, 255, 187, 0) 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
+  filter: blur(50px);
+}
+
+
+.gradientHeroRight {
+  position: absolute;
+  width: 728px;
+  height: 728px;
+  right: 0;
+  top: 82px;
+  z-index: -1;
+
+  background: radial-gradient(50% 50% at 50% 50%, rgba(68, 255, 187, 0.23) 0%, rgba(68, 255, 187, 0) 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
+}
+
+.modalLoading,
+.modalDelete {
+  position: fixed;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 101;
+  background: rgba(0, 0, 0, 0.66);
+
+
+}
+
+.modalLoading {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 508px;
+    animation: loading 2s ease-in-out infinite alternate;
+  }
+
+  h2 {
+    margin-top: 48px;
+    font-size: 700;
+    animation: loading 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes loading {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.modalDelete {
+  z-index: 102;
+
+  div {
+    background-color: $secondary;
+    width: 435px;
+    height: 242px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+    h2 {
+      margin: 48px 0;
+      font-size: 20px;
+    }
+
+    span {
+      display: flex;
+      gap: 40px;
+
+      button {
+        font-size: 16px;
+        font-weight: 500;
+        border: 0;
+        width: 144px;
+        height: 45px;
+        border-radius: 4px;
+        background-color: $primary;
+        transition: 0.3s ease-in-out;
+      }
+
+      button+button {
+        background-color: #E25050;
+      }
+    }
+  }
+
+}
+
+.inVisible {
+  display: none;
+}

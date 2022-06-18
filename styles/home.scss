@@ -1,0 +1,334 @@
+@import "_colors";
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 140px 58px;
+  background-color: $background;
+  color: white;
+}
+
+.perfil {
+  position: fixed;
+  width: 212px;
+  left: 4%;
+
+  .gradient {
+    position: absolute;
+    width: 558px;
+    height: 458px;
+    left: -365px;
+    top: 117px;
+    z-index: -1;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(68, 255, 187, 0.5) 0%, rgba(68, 255, 187, 0) 100%)
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    filter: blur(50px);
+  }
+
+  h2 {
+    margin-bottom: 8px;
+  }
+
+  .perfilCard {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #131E22;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    width: 212px;
+    height: 284px;
+
+    img {
+      border-radius: 1000px;
+      width: 116px;
+    }
+
+    h3 {
+      margin: 24px 0 12px;
+      font-size: 20px;
+      font-weight: medium;
+    }
+
+    h4 {
+      font-size: 16px;
+      font-weight: medium;
+      opacity: .5;
+    }
+
+    &:hover {
+      background-color: $hover;
+      border: 1px solid $primary;
+    }
+  }
+
+
+}
+
+.feed {
+  width: 730px;
+  margin: 0 auto;
+
+  .header {
+    z-index: 99;
+    top: 0;
+    padding: 140px 0 0;
+    position: fixed;
+    width: 730px;
+    background-color: $background;
+
+    h2 {
+      margin-bottom: 8px;
+    }
+  }
+
+  .top {
+
+
+    .newPost {
+      width: 730px;
+
+      margin-top: 70px;
+      padding: 24px 48px 12px;
+      background-color: $secondary;
+
+      border-radius: 8px;
+
+      span {
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+
+        img {
+          border-radius: 1000px;
+          width: 62px;
+        }
+
+        img+input {
+          margin-left: 18px;
+          width: 100%;
+          border: 0;
+          font-size: 20px;
+          background-color: transparent;
+          color: white;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      .action {
+        margin-top: 12px;
+        display: flex;
+        justify-content: space-between;
+
+        input[type="file"] {
+          display: none;
+        }
+
+        .customUploadFile {
+          border: 0;
+          display: inline-block;
+          cursor: pointer;
+
+        }
+
+        button {
+          background-color: $primary;
+          width: 180px;
+          height: 40px;
+          font-size: 16px;
+          border: 0;
+          font-weight: 500;
+
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+.cardsPosts {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.cardPost {
+  margin-top: 32px;
+  background-color: $secondary;
+  width: 730px;
+  padding: 28px 48px;
+  border-radius: 8px;
+
+  button {
+    background-color: transparent;
+    border: 0;
+  }
+
+  .top {
+    display: flex;
+
+    img {
+      width: 40px;
+      border-radius: 100px;
+    }
+
+    img+span {
+      display: flex;
+      flex-direction: column;
+      padding-left: 12px;
+
+      h3 {
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      p {
+        margin-top: 4px;
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+
+  }
+
+  .content {
+    p {
+      margin: 32px 0 24px;
+    }
+
+    img {
+      width: 630px;
+      height: 329px;
+      object-fit: cover;
+    }
+  }
+
+  .contentBottom {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+
+    .like {
+      background-color: transparent;
+      border: 0;
+      opacity: 1;
+    }
+
+    span {
+      padding-left: 12px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+
+
+    button.active {
+      svg {
+        fill: $primary;
+        border-color: $primary;
+
+        path {
+          stroke: $primary;
+        }
+      }
+
+    }
+
+    svg {
+      &:hover {
+
+        path {
+          stroke: $primary;
+        }
+      }
+    }
+  }
+}
+
+.anuncio {
+  position: fixed;
+  right: 4%;
+  width: 212px;
+
+  img {
+    width: 212px;
+
+  }
+
+  h2 {
+    margin-bottom: 8px;
+  }
+
+  hr {
+    margin-bottom: 32px;
+  }
+
+  div.gradient02 {
+    position: absolute;
+    width: 558px;
+    height: 458px;
+    right: 20;
+    top: 209px;
+    z-index: -1;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(68, 255, 187, 0.5) 0%, rgba(68, 255, 187, 0) 100%)
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    filter: blur(50px);
+  }
+}
+
+
+
+.modalVerImage {
+  position: fixed;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 101;
+  background: rgba(0, 0, 0, 0.66);
+}
+
+
+.modalVerImage {
+  z-index: 102;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .top {
+    background-color: transparent;
+    width: 55%;
+    border: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    img {
+      // position: absolute;
+      // top: 0;
+      // right: 10;
+      width: 57px;
+      height: 57px;
+    }
+  }
+
+  img {
+    width: 725px;
+    height: 580px;
+  }
+}
+
+.inVisible {
+  visibility: hidden;
+}

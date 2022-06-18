@@ -1,0 +1,336 @@
+main {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 140px 58px;
+  background-color: #040B1E;
+  color: white;
+}
+
+.perfil {
+  position: fixed;
+  width: 212px;
+  left: 4%;
+}
+
+.perfil .gradient {
+  position: absolute;
+  width: 558px;
+  height: 458px;
+  left: -365px;
+  top: 117px;
+  z-index: -1;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(68, 255, 187, 0.5) 0%, rgba(68, 255, 187, 0) 100%);
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+}
+
+.perfil h2 {
+  margin-bottom: 8px;
+}
+
+.perfil .perfilCard {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #131E22;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  width: 212px;
+  height: 284px;
+}
+
+.perfil .perfilCard img {
+  border-radius: 1000px;
+  width: 116px;
+}
+
+.perfil .perfilCard h3 {
+  margin: 24px 0 12px;
+  font-size: 20px;
+  font-weight: medium;
+}
+
+.perfil .perfilCard h4 {
+  font-size: 16px;
+  font-weight: medium;
+  opacity: .5;
+}
+
+.perfil .perfilCard:hover {
+  background-color: #17404F;
+  border: 1px solid #44FFBB;
+}
+
+.feed {
+  width: 730px;
+  margin: 0 auto;
+}
+
+.feed .header {
+  top: 0;
+  padding: 140px 0 0;
+  position: fixed;
+  width: 730px;
+  background-color: #040B1E;
+}
+
+.feed .header h2 {
+  margin-bottom: 8px;
+}
+
+.feed .top .newPost {
+  width: 730px;
+  margin-top: 70px;
+  padding: 24px 48px 12px;
+  background-color: #131E22;
+  border-radius: 8px;
+}
+
+.feed .top .newPost span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 18px;
+}
+
+.feed .top .newPost span img {
+  border-radius: 1000px;
+  width: 62px;
+}
+
+.feed .top .newPost span img + input {
+  margin-left: 18px;
+  width: 100%;
+  border: 0;
+  font-size: 20px;
+  background-color: transparent;
+  color: white;
+}
+
+.feed .top .newPost span img + input:focus {
+  outline: none;
+}
+
+.feed .top .newPost .action {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feed .top .newPost .action input[type="file"] {
+  display: none;
+}
+
+.feed .top .newPost .action .customUploadFile {
+  border: 0;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.feed .top .newPost .action button {
+  background-color: #44FFBB;
+  width: 180px;
+  height: 40px;
+  font-size: 16px;
+  border: 0;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.cardsPosts {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.cardPost {
+  margin-top: 32px;
+  background-color: #131E22;
+  width: 730px;
+  padding: 28px 48px;
+  border-radius: 8px;
+}
+
+.cardPost .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cardPost .top img {
+  width: 40px;
+  border-radius: 100px;
+}
+
+.cardPost .top img + span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 12px;
+}
+
+.cardPost .top img + span h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cardPost .top img + span p {
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.cardPost .content p {
+  margin: 32px 0 24px;
+}
+
+.cardPost .content img {
+  width: 630px;
+  height: 329px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cardPost .contentBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 12px;
+}
+
+.cardPost .contentBottom .like {
+  background-color: transparent;
+  border: 0;
+  opacity: 1;
+}
+
+.cardPost .contentBottom span {
+  padding-left: 12px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cardPost .contentBottom button.active svg {
+  fill: #44FFBB;
+  border-color: #44FFBB;
+}
+
+.cardPost .contentBottom button.active svg path {
+  stroke: #44FFBB;
+}
+
+.cardPost .contentBottom svg:hover path {
+  stroke: #44FFBB;
+}
+
+.anuncio {
+  position: fixed;
+  right: 4%;
+  width: 212px;
+}
+
+.anuncio img {
+  width: 212px;
+}
+
+.anuncio h2 {
+  margin-bottom: 8px;
+}
+
+.anuncio hr {
+  margin-bottom: 32px;
+}
+
+.anuncio div.gradient02 {
+  position: absolute;
+  width: 558px;
+  height: 458px;
+  right: 20;
+  top: 209px;
+  z-index: -1;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(68, 255, 187, 0.5) 0%, rgba(68, 255, 187, 0) 100%);
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+}
+
+.results {
+  padding-top: 48px;
+}
+
+.cardResult {
+  margin-top: 24px;
+  background: #131E22;
+  width: 730px;
+  height: 124px;
+  padding: 0 48px;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid transparent;
+}
+
+.cardResult .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardResult .left img {
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cardResult .left h4 {
+  margin-left: 12px;
+}
+
+.cardResult:hover {
+  background: #17404F;
+  border: 1px solid #44FFBB;
+}
+/*# sourceMappingURL=search.css.map */

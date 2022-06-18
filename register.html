@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/Favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/Favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>LooksLike</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/register.css">
+  <link rel="stylesheet" href="./styles/header.css">
+</head>
+<body>
+  <div class="gradientHeroLeft"></div>
+  <div class="gradientHeroRight"></div>
+  <header>
+    <nav>
+      <a class="logo" href="/">
+        <img src="./assets/icons/logo.svg" alt="">
+      </a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="./index.html">Inicio</a>
+        </li>
+        <li> <a class="headerLink" href="./signIn.html">Entrar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form action="">
+      <h2>Registar</h2>
+      <span>
+        <label for="email">
+          Nome
+        </label>
+        <input type="text" id ="email" name="email">
+      </span>
+      <span>
+        <label for="email">
+          Email
+        </label>
+        <input type="text" id ="email" name="email">
+      </span>
+      <div class="shortInput">
+        <span>
+          <label for="email">
+            Senha
+          </label>
+          <input type="password" id ="password" name="">
+        </span>
+        <span>
+          <label for="email">
+            Data nascimento
+          </label>
+          <input type="date" >
+        </span>
+        <span>
+          <label for="email">
+            Telefone
+          </label>
+          <input type="text" id ="email" name="email">
+        </span>
+        <span>
+          <label for="email">
+            Cidade
+          </label>
+          <input type="text" id ="email" name="email">
+        </span>
+      </div>
+      <button type="submit">Registar</button>
+      <p>Já tens uma conta? <a href="./signIn.html">Entrar</a></p>
+    </form>
+    <img src="./assets/registerImg.svg" alt="" srcset="">
+  </main>
+ 
+  <div class="modalLoading inVisible">
+    <img src="./assets/icons/logo.svg" alt="">
+    <h2>Aguarde...</h2>
+  </div>
+
+  <div class="modalDelete inVisible">
+    <div>
+      <h2>Email ou senha invalida</h2>
+      <span>
+        <button>Tentar</button>
+      </span>
+    </div>
+    </div>
+
+    <div class="modalDelete inVisible">
+      <div>
+        <h2>Conta criada com sucesso</h2>
+        <span>
+          <button>Continuar</button>
+        </span>
+      </div>
+      </div>
+  
+  <script src="./js/index.js"></script>
+
+</body>
+</html>

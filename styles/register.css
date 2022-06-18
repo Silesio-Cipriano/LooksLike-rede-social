@@ -1,0 +1,233 @@
+main {
+  color: white;
+  padding: 120px 100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main form h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+main form input {
+  font-size: 20px;
+  color: white;
+  padding: 0 12px;
+}
+
+main form span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 18px;
+}
+
+main form span label {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+main form span input {
+  width: 408px;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid #44FFBB;
+  background-color: transparent;
+}
+
+main form .shortInput {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 0 20px;
+}
+
+main form .shortInput input {
+  width: 196px;
+}
+
+main form button {
+  margin-top: 32px;
+  background-color: #44FFBB;
+  border: 1px solid #44FFBB;
+  border-radius: 5px;
+  height: 45px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+main form p a {
+  font-weight: 700;
+  color: #44FFBB;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+main form p a:hover {
+  opacity: 0.6;
+}
+
+.gradientHeroLeft {
+  position: absolute;
+  width: 758px;
+  height: 758px;
+  left: -365px;
+  top: 145px;
+  z-index: -1;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(68, 255, 187, 0.5) 0%, rgba(68, 255, 187, 0) 100%);
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+}
+
+.gradientHeroRight {
+  position: absolute;
+  width: 728px;
+  height: 728px;
+  right: 0;
+  top: 82px;
+  z-index: -1;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(68, 255, 187, 0.23) 0%, rgba(68, 255, 187, 0) 100%);
+}
+
+.modalLoading,
+.modalDelete {
+  position: fixed;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 101;
+  background: rgba(0, 0, 0, 0.66);
+}
+
+.modalLoading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modalLoading img {
+  width: 508px;
+  -webkit-animation: loading 2s ease-in-out infinite alternate;
+          animation: loading 2s ease-in-out infinite alternate;
+}
+
+.modalLoading h2 {
+  margin-top: 48px;
+  font-size: 700;
+  -webkit-animation: loading 2s ease-in-out infinite alternate;
+          animation: loading 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.modalDelete {
+  z-index: 102;
+}
+
+.modalDelete div {
+  background-color: #131E22;
+  width: 435px;
+  height: 242px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+.modalDelete div h2 {
+  margin: 48px 0;
+  font-size: 20px;
+}
+
+.modalDelete div span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+
+.modalDelete div span button {
+  font-size: 16px;
+  font-weight: 500;
+  border: 0;
+  width: 144px;
+  height: 45px;
+  border-radius: 4px;
+  background-color: #44FFBB;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.modalDelete div span button + button {
+  background-color: #E25050;
+}
+
+.inVisible {
+  display: none;
+}
+/*# sourceMappingURL=register.css.map */
